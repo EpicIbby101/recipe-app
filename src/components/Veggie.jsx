@@ -35,10 +35,11 @@ function Veggie() {
         <Splide
           options={{
             perPage: 3,
-            arrows: false,
+            arrows: true,
             pagination: false,
             drag: "free",
             gap: `5rem`,
+            height: '14rem',
           }}
         >
           {Veggie.map((recipe) => {
@@ -62,6 +63,10 @@ function Veggie() {
 
 const Wrapper = styled.div`
   margin: 4rem 0rem;
+  margin-bottom: 10rem;
+  h3 {
+    text-decoration: underline;
+  };
 `;
 
 const Card = styled.div`
